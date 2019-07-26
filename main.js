@@ -1,12 +1,13 @@
-protfolioall.onclick = function () {
-    protfolioBar.className = "bar status1"
-}
-protfolioaFramework.onclick = function () {
-    protfolioBar.className = "bar status2"
-}
-protfolioaVollina.onclick = function () {
-    protfolioBar.className = "bar status3"
-}
+console.log(window.Swiper)
+// protfolioall.onclick = function () {
+//     protfolioBar.className = "bar status1"
+// }
+// protfolioaFramework.onclick = function () {
+//     protfolioBar.className = "bar status2"
+// }
+// protfolioaVollina.onclick = function () {
+//     protfolioBar.className = "bar status3"
+// }
 setTimeout(function () {
     sitewelcome.classList.remove('active')
 }, 2000)
@@ -93,3 +94,25 @@ for (let i = 0; i < aTags.length; i++) {
             .start();
     }
 }
+
+var mySwiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    // direction: 'vertical',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    // scrollbar: {
+    //     el: '.swiper-scrollbar',
+    // },
+})
