@@ -10,13 +10,10 @@
     <script src="//at.alicdn.com/t/font_1232009_atv66d0rsnj.js"></script>
     <script src="https://cdn.bootcss.com/tween.js/r14/Tween.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-    <style type="text/css">
-
-    </style>
     <title>My Resume</title>
 </head>
 
-<body>
+<body id="body" class="active">
     <div id="sitewelcome" class="site-welcome active">
         <div class="loading"></div>
     </div>
@@ -25,7 +22,7 @@
             <a href="#" class="logo" alt="logo">
                 <span class="rs">RS</span><span class="card">card</span>
             </a>
-            <nav class="menu">
+            <nav class="menu" id="nav-menu">
                 <ul class="clearfix">
                     <li><a href="#siteAbout">关于</a></li>
                     <li><a href="#siteSkills">技能</a></li>
@@ -167,7 +164,7 @@
             </div>
         </nav> -->
 
-        <div class="jobs">
+        <div id="jobs">
             <!-- Slider main container -->
             <div class="swiper-container">
                 <!-- Additional required wrapper -->
@@ -186,7 +183,11 @@
             <div class="swiper-button-next"></div>
         </div>
     </section>
-    <script src="main.js"></script>
+    <script src="./js/auto-scroll.js"></script>
+    <script src="./js/loading.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/scroll-smoothy.js"></script>
+    <script src="./js/sticky-topnavbar.js"></script>
 </body>
 
 </html>

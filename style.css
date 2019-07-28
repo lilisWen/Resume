@@ -44,22 +44,25 @@ h6 {
 
 .site-welcome {
     display: none;
-    position: absolute;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
     left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
     background: white;
     z-index: 10;
     justify-content: center;
     align-items: center;
+
 }
 
 .site-welcome.active {
     display: flex;
 }
 
-
+body.active {
+    overflow: hidden;
+}
 
 .loading {
     width: 100px;
@@ -190,7 +193,7 @@ h6 {
 }
 
 [mark].offset {
-    transform: translateY(200px);
+    transform: translateY(100px);
 }
 
 [mark] {
@@ -395,10 +398,14 @@ body main .self-introduction {
     background-color: white;
 }
 
-section.skills,
+section.skills {
+    max-width: 930px;
+    margin: 80px auto;
+}
+
 section.protfolio {
     max-width: 930px;
-    margin: 70px auto;
+    margin: 75px auto;
 }
 
 section.skills h2,
