@@ -66,6 +66,7 @@
                 let li = document.createElement('li')
                 li.innerText = `${object.attributes.name}:${object.attributes.content}`
                 this.messageList.appendChild(li)
+                myForm.querySelector('input[name=content]').value = ''
                 console.log(object)
             }).then(function () {}, function (err) {
                 console.log(err)
