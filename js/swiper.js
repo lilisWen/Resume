@@ -1,5 +1,5 @@
 ! function () {
-    var view = document.querySelector('#jobs')
+    var view = window.View('#jobs')
     // console.log(view)
     var controller = {
         view: null,
