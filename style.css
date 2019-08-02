@@ -34,6 +34,15 @@ h6 {
     font-weight: normal;
 }
 
+#boke {
+    font-size: 12px;
+    font-weight: 700;
+    float: right;
+    margin-top: 8px;
+    margin-left: 3px;
+    color: #E6686A;
+}
+
 .icon {
     width: 1em;
     height: 1em;
